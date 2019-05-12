@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<div style="text-align:center">
-  <h1>
-  {{title}}
-</h1>
-</div>
-<body style="background-color:bisque">
-<div>
-<img src="Sintra.jpg" alt="Sintra" width="550" height="400"/> 
-</div>
-<ul>
-  <li>Sintra is a resort town in the foothills of Portugal’s Sintra Mountains, near the capital, Lisbon
-   </li>
-  <li>A longtime royal sanctuary,its forested terrain is studded with pastel-colored villas and palaces.  
-  </li>
-  <li>
-      The hilltop 19th-century Pena National Palace is known for a whimsical design and sweeping views.
-  </li>
-</ul>
-<p>for more informaton visit<a href="http://www.sintra-portugal.com" target="_blank"> website</a></p>
-</body>
+<h1>Welcome</h1>
 
-</html>
+<a [routerLink]="'/welcome'">to the Tourismous-</a>
+<a [routerLink]="'/chess'">to the Chessboard-</a>
+<a [routerLink]="'/task-manager'">to the Task manger-</a>
+
+<router-outlet></router-outlet>
