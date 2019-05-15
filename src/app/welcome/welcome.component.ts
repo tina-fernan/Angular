@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-  title = 'Sintra Portugal'
+  title = 'Sintra Portugal';
   constructor() { }
 
   ngOnInit() {
