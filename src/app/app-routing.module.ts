@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ChessComponent } from './chess/chess.component';
 import { TaskComponent } from './task/task.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { HeroesComponent } from './heroes/heroes.component';
 
 const routes: Routes = [
   {path:'chess' ,
@@ -12,6 +13,10 @@ const routes: Routes = [
    },
    {path:'welcome',
      component: WelcomeComponent
+   },
+   {
+     path: 'heroes',
+     component: HeroesComponent
    }
 ];
 

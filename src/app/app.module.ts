@@ -7,18 +7,24 @@ import { AppComponent } from './app.component';
 import { ChessComponent } from './chess/chess.component';
 import { TaskComponent } from './task/task.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroComponent } from './hero/hero.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChessComponent,
     TaskComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HeroesComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
