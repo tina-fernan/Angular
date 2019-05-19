@@ -1,27 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { Task } from '../task';
 
 @Component({
-  selector: 'app-task',
+ // selector: 'app-task',
   templateUrl: './task.component.html',
   styleUrls: ['./task.component.scss']
 })
 export class TaskComponent implements OnInit {
-  taskName: string;
-  taskPercentage: number;
-  description: string;
+tasks : Array<Task> = [{name:"study" ,description:"",type:"event",finished:true}];
 
   constructor() { }
   ngOnInit() {
   }
-
-  addTask() {
-    console.log(this.taskName);
-  }
-
-  addFormListener() {
-    console.log(this.taskName,this.taskPercentage,this.description);
-    
-
-  }  
+addTaskToList(task:Task){
+  this.tasks.push(task);
+}
 
 }
