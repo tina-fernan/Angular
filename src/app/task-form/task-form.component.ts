@@ -1,6 +1,7 @@
 import { Component, OnInit, Output ,EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup,Validators } from '@angular/forms';
 import { Task } from '../task';
+import { TaskService } from '../task.service';
 
 @Component({
   selector: 'app-task-form',
@@ -12,7 +13,7 @@ export class TaskFormComponent implements OnInit {
   formGroup : FormGroup;
   isValid = false;
 
-  constructor(private formBuilder : FormBuilder) { }
+  constructor(private formBuilder : FormBuilder, private taskService: TaskService) { }
 
   ngOnInit() {
     this.formGroup=this.formBuilder.group({
@@ -27,7 +28,9 @@ export class TaskFormComponent implements OnInit {
   }
   submit(){
     if (this.formGroup.valid) {
-      this.addTask.emit(this.formGroup.value);
+      // this.addTask.emit(this.formGroup.value);
+      this.taskService.addTaskToList(this.formGroup.value)
+      // 
     } else {
       console.log('not valid');
     

@@ -1,19 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-import { Task } from '../task';
+import { Component, OnInit } from "@angular/core";
+import { Task } from "../task";
+import { TaskService } from '../task.service';
 
 @Component({
- // selector: 'app-task',
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.scss']
+  // selector: 'app-task',
+  templateUrl: "./task.component.html",
+  styleUrls: ["./task.component.scss"]
 })
 export class TaskComponent implements OnInit {
-tasks : Array<Task> = [{name:"study" ,description:"",type:"event",finished:true}];
+  tasks: Array<Task> = [];
 
-  constructor() { }
+  constructor(private service: TaskService) {}
+
   ngOnInit() {
+    this.tasks = this.service.tasks;
   }
-addTaskToList(task:Task){
-  this.tasks.push(task);
-}
+
+  delete(task: Task) {
+    this.service.deleteTask(task);
+  }
 
 }

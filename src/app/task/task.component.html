@@ -2,10 +2,11 @@
   <div class="col-6">
     <ul>
       <li *ngFor="let task of tasks">
-        {{ task.name }}<span class="description">{{task.description}} </span></li>
+        {{ task.name }}<span class="description">{{task.description}} </span>
+      <button class="btn btn-danger" (click)="delete(tasks)">Delete</button></li>
         </ul>
         </div>
         <div class="col-6">
-          <app-task-form (addTask)="addTaskToList($event)"></app-task-form>
+          <app-task-form></app-task-form>
         </div>
         </div>

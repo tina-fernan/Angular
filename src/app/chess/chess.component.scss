@@ -1,15 +1,13 @@
 
 .chessboard {
-   // width: 640px;
-   // height: 640px;
-   // margin: 20px;
-   // border: 25px solid #333;
+  
    width: calc((80px + 1px) * 8);
    margin: 0 auto;
    border: 4px solid black;
 }
 .black, .white {
-    //float: left;
+
+    
    width: 80px;
    height: 80px;
     font-size:50px;
@@ -18,7 +16,7 @@
     vertical-align:middle;
 }
 .black {
-    background-color: rgb(114, 233, 217);
+    background-color: rgb(158, 88, 88);
 
 }
 .white {
