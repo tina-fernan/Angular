@@ -5,6 +5,7 @@ import { TaskComponent } from './task/task.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { SoudokuComponent } from './soudoku/soudoku.component';
+import { PerBasketComponent } from './per-basket/per-basket.component';
 
 const routes: Routes = [
   {path:'chess' ,
@@ -21,6 +22,9 @@ const routes: Routes = [
    },{
      path: 'soudoku',
      component:SoudokuComponent
+   },{
+     path: 'per-basket',
+    component : PerBasketComponent
    }
 ];
 

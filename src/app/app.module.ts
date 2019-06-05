@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { SoudokuComponent } from './soudoku/soudoku.component';
 import { GameComponent } from './game/game.component';
+import { PerBasketComponent } from './per-basket/per-basket.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GameComponent } from './game/game.component';
     HeroComponent,
     TaskFormComponent,
     SoudokuComponent,
-    GameComponent
+    GameComponent,
+    PerBasketComponent
   ],
   imports: [
     BrowserModule,
