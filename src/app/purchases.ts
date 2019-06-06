@@ -10,7 +10,7 @@ export const purchases: Purchases = {
           code: 2541
         },
         Milch: {
-          product: 'Milch',
+          product: 'Smoothie',
           amount: 3,
           price: 1.2,
           code: 2542
