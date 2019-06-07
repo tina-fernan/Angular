@@ -14,6 +14,7 @@ import { TaskFormComponent } from './task-form/task-form.component';
 import { SoudokuComponent } from './soudoku/soudoku.component';
 import { GameComponent } from './game/game.component';
 import { PerBasketComponent } from './per-basket/per-basket.component';
+import { PerProductComponent } from './per-product/per-product.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PerBasketComponent } from './per-basket/per-basket.component';
     TaskFormComponent,
     SoudokuComponent,
     GameComponent,
-    PerBasketComponent
+    PerBasketComponent,
+    PerProductComponent
   ],
   imports: [
     BrowserModule,

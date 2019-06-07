@@ -6,6 +6,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { SoudokuComponent } from './soudoku/soudoku.component';
 import { PerBasketComponent } from './per-basket/per-basket.component';
+import { PerProductComponent } from './per-product/per-product.component';
 
 const routes: Routes = [
   {path:'chess' ,
@@ -25,6 +26,9 @@ const routes: Routes = [
    },{
      path: 'per-basket',
     component : PerBasketComponent
+   },{
+     path: 'per-product',
+     component: PerProductComponent
    }
 ];
 
