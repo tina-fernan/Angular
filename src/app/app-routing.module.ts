@@ -5,12 +5,13 @@ import { TaskComponent } from './task/task.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { SoudokuComponent } from './soudoku/soudoku.component';
-import { PerBasketComponent } from './per-basket/per-basket.component';
-import { PerProductComponent } from './per-product/per-product.component';
+import { PerBasketComponent } from './shop/per-basket/per-basket.component';
+import { PerProductComponent } from './shop/per-product/per-product.component';
 
 const routes: Routes = [
   {path:'chess' ,
-   component: ChessComponent},{
+   component: ChessComponent},
+   {
      path:'task-manager',
      component: TaskComponent
    },
@@ -23,13 +24,10 @@ const routes: Routes = [
    },{
      path: 'soudoku',
      component:SoudokuComponent
-   },{
-     path: 'per-basket',
-    component : PerBasketComponent
-   },{
-     path: 'per-product',
-     component: PerProductComponent
-   }
+   }, {
+    path: 'shop',
+    loadChildren: './shop/shop.module#ShopModule'
+  }
 ];
 
 @NgModule({

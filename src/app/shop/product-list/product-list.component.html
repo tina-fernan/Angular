@@ -1,0 +1,18 @@
+<ng-container *ngIf="products$ | async as products">
+  <table class="table">
+    <thead>
+      <th>Name</th>
+      <th>Code</th>
+      <th>Price</th>
+      <th>&nbsp;</th>
+    </thead>
+    <tbody>
+      <tr * ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td> {{product.code}}</td>
+        <td> {{product.price}} </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
