@@ -1,1 +1,1 @@
-{ "data": [{ "id": 1, "name": "Apple", "code": "item-01", "price": 5.8 }] }
+{"data":[{"id":6,"name":"milk","code":"mlk","price":1.29},{"id":11,"name":"chocolate","code":"chlat","price":3},{"id":12,"name":"smoothie","code":"somt","price":2.2}]}

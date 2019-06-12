@@ -6,6 +6,9 @@ import { ShopComponent } from './shop/shop.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductFormComponent } from './product-form/product-form.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { ProductListComponent } from './product-list/product-list.component';
     PerProductComponent,
     ShopComponent,
     ProductListComponent,
+    ProductFormComponent,
+    EditProductComponent,
+    AddProductComponent,
   ],
   imports: [
     CommonModule,
@@ -31,6 +37,12 @@ import { ProductListComponent } from './product-list/product-list.component';
         },{
           path: 'products',
           component: ProductListComponent
+        },{
+          path: 'add-product',
+          component : AddProductComponent
+        },{
+          path : 'edit-product/:id',
+          component : EditProductComponent
         }
       ]
     }

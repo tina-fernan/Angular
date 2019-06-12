@@ -1,0 +1,4 @@
+<ng-container *ngIf="product">
+  <button class="btn btn-danger" (click)="remove(product.id)">Delete</button>
+  <app-product-form [product]="product" (save)="edit($event)"></app-product-form>
+</ng-container>
